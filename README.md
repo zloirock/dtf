@@ -1,9 +1,21 @@
 # dtf<sup>[![version](http://vb.teelaun.ch/zloirock/dtf.svg)](https://www.npmjs.org/package/dtf/)</sup>
 Simple and compact `Date` formatting. Extracted from [core-js](https://github.com/zloirock/core-js). By default available english (`en`) and russian (`ru`) locales.
 
-[development version](https://github.com/zloirock/dtf/index.js), [production version](https://github.com/zloirock/dtf/dtf.min.js)
+[development version](https://raw.githack.com/zloirock/dtf/master/index.js), [production version](https://raw.githack.com/zloirock/dtf/master/dtf.min.js)
 
 [![NPM](https://nodei.co/npm/dtf.png?downloads=true)](https://www.npmjs.org/package/dtf/)
+
+```javascript
+dtf
+  .format(date, format, locale?) -> str
+  .formatUTC(date, format, locale?) -> str
+  .locale(locale?) -> locale
+  .addLocale(locale, object) -> dtf
+  .extend() -> dtf
+Date
+  #format(format, locale?) -> str, available after dtf.extend()
+  #formatUTC(format, locale?) -> str, available after dtf.extend()
+```
 
 Token | Unit | Sample
 ------|----- | ------
@@ -22,18 +34,6 @@ M  | Month, string     | Ноябрь
 MM | Of month, string  | Ноября
 Y  | Year, full        | 2014
 YY | Year, 2 digits    | 14
-
-```javascript
-dtf
-  .format(date, format, locale?) -> str
-  .formatUTC(date, format, locale?) -> str
-  .locale(locale?) -> locale
-  .addLocale(locale, object) -> dtf
-  .extend() -> dtf
-Date
-  #format(format, locale?) -> str, available after dtf.extend()
-  #formatUTC(format, locale?) -> str, available after dtf.extend()
-```
 
 [Examples](http://goo.gl/zBaEQt):
 ```javascript
