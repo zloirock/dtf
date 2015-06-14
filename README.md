@@ -1,9 +1,9 @@
-# dtf<sup>[![version](http://vb.teelaun.ch/zloirock/dtf.svg)](https://www.npmjs.org/package/dtf/)</sup>
+# dtf
 Simple and compact `Date` formatting. Extracted from [core-js](https://github.com/zloirock/core-js). By default available english (`en`) and russian (`ru`) locales.
 
 [development version](https://raw.githack.com/zloirock/dtf/master/index.js), [production version](https://raw.githack.com/zloirock/dtf/master/dtf.min.js)
 
-[![NPM](https://nodei.co/npm/dtf.png?downloads=true)](https://www.npmjs.org/package/dtf/)
+[![NPM](https://nodei.co/npm/dtf.png?downloads=true)](https://www.npmjs.org/package/dtf/) [![Build Status](https://travis-ci.org/zloirock/dtf.png)](https://travis-ci.org/zloirock/dtf)
 
 ```javascript
 dtf
