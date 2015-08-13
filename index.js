@@ -5,7 +5,7 @@
  * © 2015 Denis Pushkarev
  */
 !function(){
-  var global       = typeof self != 'undefined' ? self : Function('return this')()
+  var global = typeof self != 'undefined' && self.Math == Math ? self : Function('return this')()
     , DateProto    = Date.prototype
     , has          = {}.hasOwnProperty
     , formatRegExp = /\b\w\w?\b/g
