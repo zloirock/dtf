@@ -10,11 +10,11 @@
   "devDependencies": {
     "grunt": "0.4.x",
     "grunt-cli": "0.1.x",
-    "grunt-karma": "0.11.x",
-    "karma": "0.12.x",
+    "grunt-karma": "0.12.x",
+    "karma": "0.13.x",
     "karma-qunit": "0.1.x",
     "karma-phantomjs-launcher": "0.2.x",
-    "eslint": "0.24.x"
+    "eslint": "1.1.x"
   },
   "scripts": {
     "lint": "eslint index.js",
