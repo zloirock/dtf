@@ -1,3 +1,11 @@
 language: node_js
 node_js:
-  - "0.12"
+  - '12'
+  - '10'
+  - '8'
+os:
+  - windows
+  - linux
+  - osx
+
+sudo: false
