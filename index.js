@@ -5,19 +5,19 @@
  * © 2015 Denis Pushkarev
  */
 !function(){
-  var global = typeof self != 'undefined' && self.Math == Math ? self : Function('return this')()
-    , DateProto    = Date.prototype
-    , has          = {}.hasOwnProperty
-    , formatRegExp = /\b\w\w?\b/g
-    , flexioRegExp = /:(.*)\|(.*)$/
-    , locales      = {}
-    , current      = 'en'
-    , SECONDS      = 'Seconds'
-    , MINUTES      = 'Minutes'
-    , HOURS        = 'Hours'
-    , DATE         = 'Date'
-    , MONTH        = 'Month'
-    , YEAR         = 'FullYear';
+  var global = typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
+  var DateProto    = Date.prototype;
+  var has          = {}.hasOwnProperty;
+  var formatRegExp = /\b\w\w?\b/g;
+  var flexioRegExp = /:(.*)\|(.*)$/;
+  var locales      = {};
+  var current      = 'en';
+  var SECONDS      = 'Seconds';
+  var MINUTES      = 'Minutes';
+  var HOURS        = 'Hours';
+  var DATE         = 'Date';
+  var MONTH        = 'Month';
+  var YEAR         = 'FullYear';
 
   function $define(key, value){
     try {
@@ -59,9 +59,9 @@
 
   function addLocale(lang, locale){
     function split(index){
-      var result = Array(7)
-        , months = locale.months.split(',')
-        , i      = 0;
+      var result = Array(7);
+      var months = locale.months.split(',');
+      var i      = 0;
       while(i < 7)result[i] = months[i++].replace(flexioRegExp, '$' + index);
       return result;
     }
